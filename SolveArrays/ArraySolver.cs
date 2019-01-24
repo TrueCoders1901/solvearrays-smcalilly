@@ -17,6 +17,7 @@ namespace SolveArrays
             return total;
         }
 
+
         public int SumEvens(int[] numbers)
         {
             int totalOfEvens = 0;
@@ -32,16 +33,26 @@ namespace SolveArrays
             return totalOfEvens;
         }
 
+
         public double AverageEvens(int[] numbers)
         {
             // TODO: Implement this method
             throw new NotImplementedException();
         }
 
+
         public bool IsSumOdd(List<int> numbers)
         {
-            // TODO: Implement this method
-            throw new NotImplementedException();
+            int total = Sum(numbers.ToArray());
+
+            if (total % 2 == 0)
+            {
+                return false;
+            }
+            else
+            {
+                return true;
+            }
         }
     }
 }
