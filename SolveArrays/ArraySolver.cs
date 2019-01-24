@@ -7,14 +7,19 @@ namespace SolveArrays
     {
         public int Sum(int[] numbers)
         {
-            // TODO: Implement this method
-            throw new NotImplementedException();
+            int total = 0;
+
+            foreach (var number in numbers)
+            {
+                total = total + number;
+            }
+
+            return total;
         }
 
         public int SumEvens(int[] numbers)
         {
-            // TODO: Implement this method
-            throw new NotImplementedException();
+           
         }
 
         public double AverageEvens(int[] numbers)
