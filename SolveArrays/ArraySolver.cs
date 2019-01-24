@@ -9,7 +9,7 @@ namespace SolveArrays
         {
             int total = 0;
 
-            foreach (var number in numbers)
+            foreach (int number in numbers)
             {
                 total = total + number;
             }
@@ -19,7 +19,17 @@ namespace SolveArrays
 
         public int SumEvens(int[] numbers)
         {
-           
+            int totalOfEvens = 0;
+
+            foreach (int number in numbers)
+            {
+                if (number % 2 == 0)
+                {
+                    totalOfEvens += number;
+                }
+            }
+
+            return totalOfEvens;
         }
 
         public double AverageEvens(int[] numbers)
